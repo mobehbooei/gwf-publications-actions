@@ -14,6 +14,15 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: installRequirements
+      run: pip -r bin/requirements.txt
+
+    - name: installHugo
+      run: sudo snap install hugo
+      
+    - name: installbinutils
+      run: sudo apt-get install binutils
+
     - name: Build
       run: sudo ANTHOLOGY_PREFIX="https://gwf-uwaterloo.github.io/gwf-publications" make
 
