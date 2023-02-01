@@ -26,5 +26,5 @@ jobs:
         sudo apt-get install -y bibutils
 
     - name: Build
-      run: sudo ANTHOLOGY_PREFIX="https://gwf-uwaterloo.github.io/gwf-publications" make
+      run: sudo ANTHOLOGY_PREFIX="https://gwf-uwaterloo.github.io/gwf-publications-actions" make
 
