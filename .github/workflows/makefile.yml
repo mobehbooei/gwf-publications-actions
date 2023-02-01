@@ -14,6 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: makedir
+      run: mkdir build/
+
     - name: installRequirements
       run: pip install -r bin/requirements.txt
 
